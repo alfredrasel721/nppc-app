@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "FR-PARENT-001",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Create family account and child profiles",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-002",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Pair/enroll child phone or tablet",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-003",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "View child/device dashboard and online status",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-004",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "View daily/weekly screen-time and app-usage reports",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-005",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Set total daily screen-time limit",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-006",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Set per-app limits; block/unblock apps",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-007",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Configure bedtime, school, homework and downtime schedules",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-008",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Keep essential/emergency apps always allowed",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-009",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Approve/deny child requests for extra time or access",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-010",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Filter websites and web content categories; manage web allowlist/blocklist",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-011",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Manage app-installation and purchase approvals where supported",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-012",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "View child location and last update time",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-013",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Configure safe places/geofences and arrival/departure alerts",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-014",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Receive SOS, low-battery, offline and permission alerts",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-015",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Review device health, active rules and permission status",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-016",
+    "section": "PARENT",
+    "source_priority": "MVP",
+    "feature": "Manage alerts, child devices and account settings",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-017",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "View browser/search/YouTube activity where supported",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-018",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Detect risky content, messages, keywords or images where supported",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-019",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Call/SMS activity and contact controls where lawful/supported",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-020",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Location history, route replay and driving reports",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-021",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Remote ring / find device",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-022",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Create chores, learning tasks and screen-time rewards",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-023",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Family chat / voice messaging",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-024",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Request visible child-approved screen mirroring, live camera, or live audio sessions (three separately gated Premium capabilities)",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-025",
+    "section": "PARENT",
+    "source_priority": "ADV",
+    "feature": "Export activity reports and configure family goals",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-001",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Guided child-device enrollment / pairing",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-002",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Explain supervision and requested permissions in child-friendly terms",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-003",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Display today's screen time used and remaining",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-004",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Show allowed/blocked apps and current schedule",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-005",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Warn before limits or bedtime begin",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-006",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Display clear restriction reason and next available time",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-007",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Apply parent-approved app and device/time restrictions (web content filtering is separately Premium)",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-008",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Allow child to request extra time or access where supported",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-009",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Receive parent decisions / granted exceptions",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-010",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Preserve permitted emergency calling during lock periods",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-011",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Provide SOS button and alert delivery status where supported",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-012",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Show device connection, sync and permission status",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-013",
+    "section": "CHILD",
+    "source_priority": "MVP",
+    "feature": "Require authorized parent action for protected settings/unpairing",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-014",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Show personal usage history and wellbeing tips",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-015",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Child check-in: 'I'm safe', 'Arrived', or 'Need pickup'",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-016",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Family text/voice chat",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-017",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "View tasks, submit completion and earn reward minutes",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-018",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Puzzles, exercises, eye-care breaks and healthy-habit goals",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-019",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Show upcoming schedules and request a schedule exception",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-020",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Child-controlled pause/resume of allotted free-time budget",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-021",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Privacy dashboard: what's shared, with whom and when",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-022",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Visible consent/indicator for any screen, camera or audio session",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-023",
+    "section": "CHILD",
+    "source_priority": "ADV",
+    "feature": "Offline rule enforcement with safe recovery after reconnecting",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CO_GUARDIAN-001",
+    "section": "CO_GUARDIAN",
+    "source_priority": "MVP",
+    "feature": "Invite/remove a second guardian",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CO_GUARDIAN-002",
+    "section": "CO_GUARDIAN",
+    "source_priority": "MVP",
+    "feature": "Assign guardian permissions for specific children",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CO_GUARDIAN-003",
+    "section": "CO_GUARDIAN",
+    "source_priority": "MVP",
+    "feature": "View permitted reports, location and alerts",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CO_GUARDIAN-004",
+    "section": "CO_GUARDIAN",
+    "source_priority": "MVP",
+    "feature": "Receive SOS and respond to child requests if authorized",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CO_GUARDIAN-005",
+    "section": "CO_GUARDIAN",
+    "source_priority": "ADV",
+    "feature": "Read-only, temporary-caregiver or location-only access",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CO_GUARDIAN-006",
+    "section": "CO_GUARDIAN",
+    "source_priority": "ADV",
+    "feature": "Track who changed a rule or approved a request",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CO_GUARDIAN-007",
+    "section": "CO_GUARDIAN",
+    "source_priority": "ADV",
+    "feature": "Resolve conflicting guardian decisions and revoke access",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-EMERGENCY-001",
+    "section": "EMERGENCY",
+    "source_priority": "MVP",
+    "feature": "Add and verify emergency contacts",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-EMERGENCY-002",
+    "section": "EMERGENCY",
+    "source_priority": "MVP",
+    "feature": "Receive SOS alert and available location",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-EMERGENCY-003",
+    "section": "EMERGENCY",
+    "source_priority": "MVP",
+    "feature": "Allow child to call approved emergency contacts",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-EMERGENCY-004",
+    "section": "EMERGENCY",
+    "source_priority": "ADV",
+    "feature": "Acknowledge SOS; trigger fallback/escalation contacts",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-EMERGENCY-005",
+    "section": "EMERGENCY",
+    "source_priority": "ADV",
+    "feature": "Time-limited emergency location link (not routine tracking)",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-FAMILY_WEB_MIGRATED-001",
+    "section": "FAMILY_WEB_MIGRATED",
+    "source_priority": "MVP",
+    "feature": "View family, children, paired devices and rules",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-FAMILY_WEB_MIGRATED-002",
+    "section": "FAMILY_WEB_MIGRATED",
+    "source_priority": "MVP",
+    "feature": "Manage account security and subscription",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-FAMILY_WEB_MIGRATED-003",
+    "section": "FAMILY_WEB_MIGRATED",
+    "source_priority": "ADV",
+    "feature": "Review/export reports and configure rule templates",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-FAMILY_WEB_MIGRATED-004",
+    "section": "FAMILY_WEB_MIGRATED",
+    "source_priority": "ADV",
+    "feature": "Review consent history and guardian action audit log",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-FAMILY_WEB_MIGRATED-005",
+    "section": "FAMILY_WEB_MIGRATED",
+    "source_priority": "ADV",
+    "feature": "Request data download or deletion",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-WEARABLE_OPTIONAL-001",
+    "section": "WEARABLE_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "Pair compatible child GPS watch",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-WEARABLE_OPTIONAL-002",
+    "section": "WEARABLE_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "Watch location, safe-zone alerts and battery status",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-WEARABLE_OPTIONAL-003",
+    "section": "WEARABLE_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "SOS button and approved-contact calls",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-WEARABLE_OPTIONAL-004",
+    "section": "WEARABLE_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "Watch-to-family voice messages or chat where supported",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-WEARABLE_OPTIONAL-005",
+    "section": "WEARABLE_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "Show last update, offline state and SIM/connectivity status",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-001",
+    "section": "BACKEND",
+    "source_priority": "MVP",
+    "feature": "Authenticate devices and securely sync parental rules",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-002",
+    "section": "BACKEND",
+    "source_priority": "MVP",
+    "feature": "Track feature permissions, device status and last sync",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-003",
+    "section": "BACKEND",
+    "source_priority": "MVP",
+    "feature": "Deliver alerts, approvals and SOS reliably",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-004",
+    "section": "BACKEND",
+    "source_priority": "MVP",
+    "feature": "Apply OS-compliant app/time/web restrictions",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-005",
+    "section": "BACKEND",
+    "source_priority": "MVP",
+    "feature": "Encrypt sensitive data and restrict access by role",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-006",
+    "section": "BACKEND",
+    "source_priority": "MVP",
+    "feature": "Provide secure recovery and device replacement flow",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-007",
+    "section": "BACKEND",
+    "source_priority": "ADV",
+    "feature": "Queue events offline; retry safely and avoid duplicate alerts",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-008",
+    "section": "BACKEND",
+    "source_priority": "ADV",
+    "feature": "Geofence processing and map/location integration",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-009",
+    "section": "BACKEND",
+    "source_priority": "ADV",
+    "feature": "Support OS-specific policy capabilities and fallbacks",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-010",
+    "section": "BACKEND",
+    "source_priority": "ADV",
+    "feature": "Feature flags, service-health metrics and incident monitoring",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-ADMIN-001",
+    "section": "ADMIN",
+    "source_priority": "MVP",
+    "feature": "Resolve pairing, sync, permission and billing issues",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-ADMIN-002",
+    "section": "ADMIN",
+    "source_priority": "MVP",
+    "feature": "Access minimal diagnostic data, not private child content by default",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-ADMIN-003",
+    "section": "ADMIN",
+    "source_priority": "MVP",
+    "feature": "Role-based staff permissions and audit logs",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-ADMIN-004",
+    "section": "ADMIN",
+    "source_priority": "MVP",
+    "feature": "Handle abuse reports and account/data-deletion requests",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-ADMIN-005",
+    "section": "ADMIN",
+    "source_priority": "ADV",
+    "feature": "Time-limited, explicitly authorized support access",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-ADMIN-006",
+    "section": "ADMIN",
+    "source_priority": "ADV",
+    "feature": "Manage plans, entitlements, app versions and incidents",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-ADMIN-007",
+    "section": "ADMIN",
+    "source_priority": "ADV",
+    "feature": "Manage retention, consent, regional policy and security reviews",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-SCHOOL_OPTIONAL-001",
+    "section": "SCHOOL_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "School-hours focus rules with appropriate authorization",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-SCHOOL_OPTIONAL-002",
+    "section": "SCHOOL_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "Limited school-device usage summaries",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-SCHOOL_OPTIONAL-003",
+    "section": "SCHOOL_OPTIONAL",
+    "source_priority": "ADV",
+    "feature": "Separate school and household data/permissions",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-001",
+    "section": "PRIVACY",
+    "source_priority": "MVP",
+    "feature": "Age-appropriate notice, consent and transparency",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-002",
+    "section": "PRIVACY",
+    "source_priority": "MVP",
+    "feature": "Clear indication of sensitive monitoring; no covert surveillance",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-003",
+    "section": "PRIVACY",
+    "source_priority": "MVP",
+    "feature": "Data minimization, encryption and retention/deletion controls",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-004",
+    "section": "PRIVACY",
+    "source_priority": "MVP",
+    "feature": "Guardian identity verification and secure account recovery",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-005",
+    "section": "PRIVACY",
+    "source_priority": "MVP",
+    "feature": "Emergency access and fail-safe behavior when a device is locked",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-006",
+    "section": "PRIVACY",
+    "source_priority": "MVP",
+    "feature": "Test Android/iOS differences before promising a feature",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-007",
+    "section": "PRIVACY",
+    "source_priority": "MVP",
+    "feature": "Explain permissions and handle permission revocation gracefully",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-008",
+    "section": "PRIVACY",
+    "source_priority": "ADV",
+    "feature": "Accessibility, localization and low-bandwidth support",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-009",
+    "section": "PRIVACY",
+    "source_priority": "ADV",
+    "feature": "Periodic access reviews and privacy/security audit reports",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-026",
+    "section": "PARENT",
+    "source_priority": "USER_ADDITION",
+    "feature": "Premium screen mirroring request and live session viewer",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-027",
+    "section": "PARENT",
+    "source_priority": "USER_ADDITION",
+    "feature": "Premium live camera request and live session viewer",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-028",
+    "section": "PARENT",
+    "source_priority": "USER_ADDITION",
+    "feature": "Premium live microphone audio request and live session listener",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-029",
+    "section": "PARENT",
+    "source_priority": "USER_ADDITION",
+    "feature": "Premium notification filter: app/category-based allow or suppress where OS permits",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PARENT-030",
+    "section": "PARENT",
+    "source_priority": "USER_ADDITION",
+    "feature": "Premium social-media app/content filtering rules where technically available",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-024",
+    "section": "CHILD",
+    "source_priority": "USER_ADDITION",
+    "feature": "Show Premium notification-filter status and clearly disclose its scope",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-025",
+    "section": "CHILD",
+    "source_priority": "USER_ADDITION",
+    "feature": "Child-initiated approval or denial for each live screen/camera/microphone session",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-026",
+    "section": "CHILD",
+    "source_priority": "USER_ADDITION",
+    "feature": "Persistent live-session indicator, stop button, and audit visibility",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-CHILD-027",
+    "section": "CHILD",
+    "source_priority": "USER_ADDITION",
+    "feature": "Apply Premium web/social/notification rules only with authorized permissions and entitlement",
+    "tier": "PREMIUM",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-011",
+    "section": "BACKEND",
+    "source_priority": "USER_ADDITION",
+    "feature": "Verify Play Billing purchases server-side; entitlements and refunds",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-BACKEND-012",
+    "section": "BACKEND",
+    "source_priority": "USER_ADDITION",
+    "feature": "Reject Premium actions on server and child device when entitlement absent",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  },
+  {
+    "id": "FR-PRIVACY-010",
+    "section": "PRIVACY",
+    "source_priority": "USER_ADDITION",
+    "feature": "Never capture sensitive content secretly or bypass OS consent dialogs",
+    "tier": "FREE",
+    "status": "PLANNED",
+    "android_feasibility": "REQUIRES_VALIDATION"
+  }
+]

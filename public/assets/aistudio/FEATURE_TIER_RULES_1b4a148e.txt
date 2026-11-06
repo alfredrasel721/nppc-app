@@ -1,0 +1,5 @@
+FREE: Every source checklist feature except the named Premium families, even those marked [ADV]. No paywall on privacy, SOS, location, screen time, app blocking, schedules, tasks, chat, co-guardians, reports, exports, support, optional integrations or other source features.
+PREMIUM: (1) Screen mirroring (2) Live camera (3) Live audio (4) Notification filtering (5) Web filtering (6) Social-media app/content filtering.
+IMPORTANT: Free app block/time limit is not Premium social-content filtering. Free browser/search history reporting (where available) is not Premium web filtering. Child disclosure, session approval and stop are always Free.
+ANDROID ONLY: Separate Parent Android app and Child Android app. No iOS or consumer web dashboard. Internal admin web may be used privately.
+SAFETY: Premium purchase does not grant permission for covert capture. Live sessions require affirmative child approval, OS consent and visible indicators.

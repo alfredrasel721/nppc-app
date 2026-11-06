@@ -1,0 +1,1 @@
+No consumer family web dashboard. Move all original family web dashboard features into the **Parent Android app** (account, subscriptions, reports, export/delete, rules and audit). Internal admin console is separately described in `ADMIN_PANEL_SPECIFICATION.md`.

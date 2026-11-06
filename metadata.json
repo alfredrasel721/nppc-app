@@ -1,0 +1,6 @@
+{
+  "name": "Android Parental Control Suite",
+  "description": "Autonomous Android Parental Control specification, architecture, and dual-app (Parent & Child) engineering workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

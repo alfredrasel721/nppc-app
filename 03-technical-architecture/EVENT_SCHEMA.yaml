@@ -1,0 +1,31 @@
+schemaVersion: 1
+envelope:
+  required: [eventId, eventType, timestamp, familyId, actorId, correlationId]
+  fields:
+    eventId: uuid
+    eventType: string
+    timestamp: iso8601_utc
+    familyId: uuid
+    actorId: uuid
+    childId: uuid_optional
+    correlationId: uuid
+    payload: validated_object
+  idempotency: eventId
+  transport: FCM contains only eventId; clients fetch content via authenticated API
+allowedEventTypes:
+  - RULE_UPDATED
+  - RULE_APPLIED
+  - RULE_FAILED
+  - EXTRA_TIME_REQUESTED
+  - EXTRA_TIME_DECIDED
+  - SOS_TRIGGERED
+  - LOCATION_UPDATED
+  - GEOFENCE_ENTERED
+  - GEOFENCE_EXITED
+  - PERMISSION_REVOKED
+  - SUBSCRIPTION_CHANGED
+  - LIVE_SESSION_REQUESTED
+  - LIVE_SESSION_DECLINED
+  - LIVE_SESSION_STARTED
+  - LIVE_SESSION_STOPPED
+privacy: Never include raw audio, video, screenshots, notification bodies or precise location in push payload.

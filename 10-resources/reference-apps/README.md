@@ -1,0 +1,1 @@
+The original feature checklist states it was based on 18 unique apps / 19 Play Store entries. This package does not independently re-verify competitor features or current Play policies. Original inputs are preserved; verify every feature before competitor claims.

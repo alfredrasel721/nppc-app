@@ -1,0 +1,29 @@
+{
+  "spacingDp": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "radiusDp": {
+    "card": 16,
+    "button": 12
+  },
+  "touchTargetDp": 48,
+  "typeSp": {
+    "body": 16,
+    "caption": 12,
+    "title": 24
+  },
+  "color": {
+    "parentPrimary": "#3154A6",
+    "childPrimary": "#16816B",
+    "surface": "#FFFFFF",
+    "text": "#1B2430",
+    "error": "#B42318",
+    "warning": "#9A6700"
+  }
+}

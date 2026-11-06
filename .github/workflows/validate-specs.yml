@@ -1,0 +1,19 @@
+name: Validate specification package
+on: [push, pull_request]
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate feature catalog
+        run: |
+          python3 - <<'PY'
+          import json
+          data=json.load(open('01-product-requirements/feature_catalog.json'))
+          assert len({x['id'] for x in data})==len(data)
+          assert all(x['tier'] in ('FREE','PREMIUM') for x in data)
+          assert len(data)>100
+          print(len(data), 'requirements validated')
+          PY
+      - name: Verify parent and child separation
+        run: test -f 09-source-code/parent-app/README.md && test -f 09-source-code/child-app/README.md

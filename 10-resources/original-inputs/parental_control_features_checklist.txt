@@ -1,0 +1,160 @@
+PARENTAL CONTROL PLATFORM - FEATURES & FUNCTIONS CHECKLIST
+Based on the earlier review of 18 unique apps (19 submitted Play Store links).
+Updated: 2026-11-06
+
+HOW TO USE
+[ ] = feature to consider / track during product planning
+[MVP] = suggested core feature; [ADV] = advanced / optional feature
+This is a consolidated feature shortlist, NOT a claim that every reviewed app
+provides every item. Advanced items may be OS-, permission-, plan- or region-dependent.
+Some operational/privacy items are recommended design features, not verified
+competitor features.
+
+============================================================
+1. PARENT / PRIMARY GUARDIAN APP
+============================================================
+[ ] [MVP] Create family account and child profiles
+[ ] [MVP] Pair/enroll child phone or tablet
+[ ] [MVP] View child/device dashboard and online status
+[ ] [MVP] View daily/weekly screen-time and app-usage reports
+[ ] [MVP] Set total daily screen-time limit
+[ ] [MVP] Set per-app limits; block/unblock apps
+[ ] [MVP] Configure bedtime, school, homework and downtime schedules
+[ ] [MVP] Keep essential/emergency apps always allowed
+[ ] [MVP] Approve/deny child requests for extra time or access
+[ ] [MVP] Filter websites/categories; manage allowlist/blocklist
+[ ] [MVP] Manage app-installation and purchase approvals where supported
+[ ] [MVP] View child location and last update time
+[ ] [MVP] Configure safe places/geofences and arrival/departure alerts
+[ ] [MVP] Receive SOS, low-battery, offline and permission alerts
+[ ] [MVP] Review device health, active rules and permission status
+[ ] [MVP] Manage alerts, child devices and account settings
+[ ] [ADV] View browser/search/YouTube activity where supported
+[ ] [ADV] Detect risky content, messages, keywords or images where supported
+[ ] [ADV] Call/SMS activity and contact controls where lawful/supported
+[ ] [ADV] Location history, route replay and driving reports
+[ ] [ADV] Remote ring / find device
+[ ] [ADV] Create chores, learning tasks and screen-time rewards
+[ ] [ADV] Family chat / voice messaging
+[ ] [ADV] Remote screen viewing, camera or ambient audio ONLY with clear
+          disclosure, suitable authorization and OS-supported consent
+[ ] [ADV] Export activity reports and configure family goals
+
+============================================================
+2. CHILD APP / COMPANION AGENT
+============================================================
+[ ] [MVP] Guided child-device enrollment / pairing
+[ ] [MVP] Explain supervision and requested permissions in child-friendly terms
+[ ] [MVP] Display today's screen time used and remaining
+[ ] [MVP] Show allowed/blocked apps and current schedule
+[ ] [MVP] Warn before limits or bedtime begin
+[ ] [MVP] Display clear restriction reason and next available time
+[ ] [MVP] Apply parent-approved app, device and web restrictions
+[ ] [MVP] Allow child to request extra time or access where supported
+[ ] [MVP] Receive parent decisions / granted exceptions
+[ ] [MVP] Preserve permitted emergency calling during lock periods
+[ ] [MVP] Provide SOS button and alert delivery status where supported
+[ ] [MVP] Show device connection, sync and permission status
+[ ] [MVP] Require authorized parent action for protected settings/unpairing
+[ ] [ADV] Show personal usage history and wellbeing tips
+[ ] [ADV] Child check-in: 'I'm safe', 'Arrived', or 'Need pickup'
+[ ] [ADV] Family text/voice chat
+[ ] [ADV] View tasks, submit completion and earn reward minutes
+[ ] [ADV] Puzzles, exercises, eye-care breaks and healthy-habit goals
+[ ] [ADV] Show upcoming schedules and request a schedule exception
+[ ] [ADV] Child-controlled pause/resume of allotted free-time budget
+[ ] [ADV] Privacy dashboard: what's shared, with whom and when
+[ ] [ADV] Visible consent/indicator for any screen, camera or audio session
+[ ] [ADV] Offline rule enforcement with safe recovery after reconnecting
+
+============================================================
+3. CO-PARENT / OTHER GUARDIAN
+============================================================
+[ ] [MVP] Invite/remove a second guardian
+[ ] [MVP] Assign guardian permissions for specific children
+[ ] [MVP] View permitted reports, location and alerts
+[ ] [MVP] Receive SOS and respond to child requests if authorized
+[ ] [ADV] Read-only, temporary-caregiver or location-only access
+[ ] [ADV] Track who changed a rule or approved a request
+[ ] [ADV] Resolve conflicting guardian decisions and revoke access
+
+============================================================
+4. EMERGENCY / TRUSTED CONTACT
+============================================================
+[ ] [MVP] Add and verify emergency contacts
+[ ] [MVP] Receive SOS alert and available location
+[ ] [MVP] Allow child to call approved emergency contacts
+[ ] [ADV] Acknowledge SOS; trigger fallback/escalation contacts
+[ ] [ADV] Time-limited emergency location link (not routine tracking)
+
+============================================================
+5. FAMILY WEB DASHBOARD / ACCOUNT OWNER
+============================================================
+[ ] [MVP] View family, children, paired devices and rules
+[ ] [MVP] Manage account security and subscription
+[ ] [ADV] Review/export reports and configure rule templates
+[ ] [ADV] Review consent history and guardian action audit log
+[ ] [ADV] Request data download or deletion
+
+============================================================
+6. GPS WATCH / WEARABLE (OPTIONAL)
+============================================================
+[ ] [ADV] Pair compatible child GPS watch
+[ ] [ADV] Watch location, safe-zone alerts and battery status
+[ ] [ADV] SOS button and approved-contact calls
+[ ] [ADV] Watch-to-family voice messages or chat where supported
+[ ] [ADV] Show last update, offline state and SIM/connectivity status
+
+============================================================
+7. BACKEND / DEVICE MANAGEMENT / NOTIFICATIONS
+============================================================
+[ ] [MVP] Authenticate devices and securely sync parental rules
+[ ] [MVP] Track feature permissions, device status and last sync
+[ ] [MVP] Deliver alerts, approvals and SOS reliably
+[ ] [MVP] Apply OS-compliant app/time/web restrictions
+[ ] [MVP] Encrypt sensitive data and restrict access by role
+[ ] [MVP] Provide secure recovery and device replacement flow
+[ ] [ADV] Queue events offline; retry safely and avoid duplicate alerts
+[ ] [ADV] Geofence processing and map/location integration
+[ ] [ADV] Support OS-specific policy capabilities and fallbacks
+[ ] [ADV] Feature flags, service-health metrics and incident monitoring
+
+============================================================
+8. CUSTOMER SUPPORT / PLATFORM ADMIN (INTERNAL)
+============================================================
+[ ] [MVP] Resolve pairing, sync, permission and billing issues
+[ ] [MVP] Access minimal diagnostic data, not private child content by default
+[ ] [MVP] Role-based staff permissions and audit logs
+[ ] [MVP] Handle abuse reports and account/data-deletion requests
+[ ] [ADV] Time-limited, explicitly authorized support access
+[ ] [ADV] Manage plans, entitlements, app versions and incidents
+[ ] [ADV] Manage retention, consent, regional policy and security reviews
+
+============================================================
+9. OPTIONAL SCHOOL / TEACHER ROLE (SEPARATE PRODUCT SCOPE)
+============================================================
+[ ] [ADV] School-hours focus rules with appropriate authorization
+[ ] [ADV] Limited school-device usage summaries
+[ ] [ADV] Separate school and household data/permissions
+
+============================================================
+10. PRIVACY, SAFETY & PLATFORM REQUIREMENTS
+============================================================
+[ ] [MVP] Age-appropriate notice, consent and transparency
+[ ] [MVP] Clear indication of sensitive monitoring; no covert surveillance
+[ ] [MVP] Data minimization, encryption and retention/deletion controls
+[ ] [MVP] Guardian identity verification and secure account recovery
+[ ] [MVP] Emergency access and fail-safe behavior when a device is locked
+[ ] [MVP] Test Android/iOS differences before promising a feature
+[ ] [MVP] Explain permissions and handle permission revocation gracefully
+[ ] [ADV] Accessibility, localization and low-bandwidth support
+[ ] [ADV] Periodic access reviews and privacy/security audit reports
+
+NOTES
+- [MVP]/[ADV] are product-planning recommendations, not competitor ratings.
+- The previous reports distinguish documented features from inferred and
+  proposed functions. Consult them for app-by-app evidence and limitations.
+- Monitoring of calls, messages, microphone, camera and screen can be highly
+  sensitive and is restricted or unavailable on many platforms.
+- Do not treat this checklist as proof that a particular competitor supports
+  a feature on a particular operating system or subscription tier.

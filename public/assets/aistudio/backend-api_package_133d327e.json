@@ -1,0 +1,10 @@
+{
+  "name": "parental-control-backend-starter",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Documentation-only starter. Agent must implement server, scripts, tests and pin dependencies.",
+  "scripts": {
+    "test": "node -e \"console.error('Not implemented: backend tests'); process.exit(1)\"",
+    "build": "node -e \"console.error('Not implemented: backend build'); process.exit(1)\""
+  }
+}

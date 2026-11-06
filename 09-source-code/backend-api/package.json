@@ -1,0 +1,10 @@
+{
+  "name": "parental-control-backend-starter",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Documentation-only starter. Agent must implement server, scripts, tests and pin dependencies.",
+  "scripts": {
+    "test": "npx tsx test/run-tests.ts",
+    "build": "npx tsc --noEmit"
+  }
+}

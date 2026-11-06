@@ -1,0 +1,316 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum UserRole {
+  PARENT
+  CHILD
+  GUARDIAN
+  SUPPORT
+}
+
+enum RuleType {
+  TIME_LIMIT
+  APP_LIMIT
+  DOWNTIME
+  ESSENTIAL_ALLOWLIST
+  EXCEPTION
+  SCHOOL_FOCUS
+  WEB_FILTER
+  SOCIAL_FILTER
+  NOTIFICATION_FILTER
+}
+
+enum RuleState {
+  DRAFT
+  PENDING
+  APPLIED
+  PARTIAL
+  FAILED
+  UNSUPPORTED
+  PERMISSION_MISSING
+  EXPIRED
+  DISABLED
+}
+
+enum EntitlementState {
+  FREE
+  PENDING_VERIFICATION
+  PREMIUM_ACTIVE
+  PREMIUM_GRACE_VERIFIED
+  EXPIRED
+  CANCELLED_AT_PERIOD_END
+  REFUNDED
+  REVOKED
+  ERROR
+}
+
+enum LiveSessionMode {
+  SCREEN
+  CAMERA
+  MICROPHONE
+}
+
+enum LiveSessionState {
+  REQUESTED
+  NOTIFIED
+  CHILD_ACCEPTED
+  OS_PERMISSION_PENDING
+  ACTIVE
+  STOPPED
+  EXPIRED
+  DISCONNECTED
+  DECLINED
+  REJECTED
+}
+
+model User {
+  id           String         @id @default(uuid()) @db.Uuid
+  role         UserRole
+  authSubject  String         @unique @map("auth_subject")
+  createdAt    DateTime       @default(now()) @map("created_at")
+  ownedFamilies Family[]      @relation("FamilyOwner")
+  memberships  FamilyMember[]
+
+  @@map("users")
+}
+
+model Family {
+  id            String         @id @default(uuid()) @db.Uuid
+  ownerId       String         @map("owner_id") @db.Uuid
+  owner         User           @relation("FamilyOwner", fields: [ownerId], references: [id])
+  createdAt     DateTime       @default(now()) @map("created_at")
+  members       FamilyMember[]
+  children      Child[]
+  subscriptions Subscription[]
+  auditEvents   AuditEvent[]
+
+  @@map("families")
+}
+
+model FamilyMember {
+  id        String   @id @default(uuid()) @db.Uuid
+  familyId  String   @map("family_id") @db.Uuid
+  userId    String   @map("user_id") @db.Uuid
+  role      UserRole
+  scope     Json     @default("{}")
+  createdAt DateTime @default(now()) @map("created_at")
+  family    Family   @relation(fields: [familyId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([familyId, userId])
+  @@map("family_members")
+}
+
+model Child {
+  id          String        @id @default(uuid()) @db.Uuid
+  familyId    String        @map("family_id") @db.Uuid
+  displayName String        @map("display_name")
+  createdAt   DateTime      @default(now()) @map("created_at")
+  family      Family        @relation(fields: [familyId], references: [id], onDelete: Cascade)
+  devices     Device[]
+  rules       Rule[]
+  locations   Location[]
+  geofences   Geofence[]
+  requests    Request[]
+  sessions    LiveSession[]
+
+  @@index([familyId])
+  @@map("children")
+}
+
+model Device {
+  id        String    @id @default(uuid()) @db.Uuid
+  childId   String    @map("child_id") @db.Uuid
+  platform  String    @default("ANDROID")
+  osVersion String    @map("os_version")
+  publicKey String    @map("public_key")
+  status    String    @default("ACTIVE")
+  lastSeen  DateTime? @map("last_seen")
+  createdAt DateTime  @default(now()) @map("created_at")
+  child     Child     @relation(fields: [childId], references: [id], onDelete: Cascade)
+  ruleAcks  RuleAck[]
+
+  @@index([childId])
+  @@map("devices")
+}
+
+model PairingCode {
+  id         String    @id @default(uuid()) @db.Uuid
+  familyId   String    @map("family_id") @db.Uuid
+  childId    String    @map("child_id") @db.Uuid
+  codeHash   String    @unique @map("code_hash")
+  expiresAt  DateTime  @map("expires_at")
+  consumedAt DateTime? @map("consumed_at")
+  createdAt  DateTime  @default(now()) @map("created_at")
+
+  @@map("pairing_codes")
+}
+
+model Rule {
+  id               String    @id @default(uuid()) @db.Uuid
+  childId          String    @map("child_id") @db.Uuid
+  deviceId         String?   @map("device_id") @db.Uuid
+  type             RuleType
+  payload          Json
+  version          Int       @default(1)
+  state            RuleState @default(PENDING)
+  scheduleTimezone String    @default("UTC") @map("schedule_timezone")
+  createdBy        String    @map("created_by") @db.Uuid
+  createdAt        DateTime  @default(now()) @map("created_at")
+  updatedAt        DateTime  @updatedAt @map("updated_at")
+  child            Child     @relation(fields: [childId], references: [id], onDelete: Cascade)
+  acks             RuleAck[]
+
+  @@index([childId, type])
+  @@map("rules")
+}
+
+model RuleAck {
+  id         String    @id @default(uuid()) @db.Uuid
+  ruleId     String    @map("rule_id") @db.Uuid
+  deviceId   String    @map("device_id") @db.Uuid
+  version    Int
+  result     RuleState
+  detail     String?
+  recordedAt DateTime  @default(now()) @map("recorded_at")
+  rule       Rule      @relation(fields: [ruleId], references: [id], onDelete: Cascade)
+  device     Device    @relation(fields: [deviceId], references: [id], onDelete: Cascade)
+
+  @@unique([ruleId, deviceId, version])
+  @@map("rule_acks")
+}
+
+model UsageDaily {
+  id         String   @id @default(uuid()) @db.Uuid
+  childId    String   @map("child_id") @db.Uuid
+  deviceId   String   @map("device_id") @db.Uuid
+  day        DateTime @db.Date
+  appPackage String   @map("app_package")
+  seconds    Int
+  recordedAt DateTime @default(now()) @map("recorded_at")
+
+  @@unique([childId, deviceId, day, appPackage])
+  @@map("usage_daily")
+}
+
+model Location {
+  id         String   @id @default(uuid()) @db.Uuid
+  childId    String   @map("child_id") @db.Uuid
+  lat        Float
+  lon        Float
+  accuracyM  Float?   @map("accuracy_m")
+  recordedAt DateTime @map("recorded_at")
+  child      Child    @relation(fields: [childId], references: [id], onDelete: Cascade)
+
+  @@index([childId, recordedAt])
+  @@map("locations")
+}
+
+model Geofence {
+  id        String   @id @default(uuid()) @db.Uuid
+  childId   String   @map("child_id") @db.Uuid
+  name      String
+  lat       Float
+  lon       Float
+  radiusM   Int      @map("radius_m")
+  createdAt DateTime @default(now()) @map("created_at")
+  child     Child    @relation(fields: [childId], references: [id], onDelete: Cascade)
+
+  @@index([childId])
+  @@map("geofences")
+}
+
+model Alert {
+  id             String   @id @default(uuid()) @db.Uuid
+  familyId       String   @map("family_id") @db.Uuid
+  childId        String   @map("child_id") @db.Uuid
+  type           String
+  idempotencyKey String   @unique @map("idempotency_key")
+  payload        Json
+  status         String   @default("DISPATCHING")
+  createdAt      DateTime @default(now()) @map("created_at")
+
+  @@index([familyId, childId, createdAt])
+  @@map("alerts")
+}
+
+model Request {
+  id          String    @id @default(uuid()) @db.Uuid
+  childId     String    @map("child_id") @db.Uuid
+  type        String
+  payload     Json
+  status      String    @default("PENDING")
+  decidedBy   String?   @map("decided_by") @db.Uuid
+  decidedAt   DateTime? @map("decided_at")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  child       Child     @relation(fields: [childId], references: [id], onDelete: Cascade)
+
+  @@index([childId, status])
+  @@map("requests")
+}
+
+model LiveSession {
+  id            String           @id @default(uuid()) @db.Uuid
+  familyId      String           @map("family_id") @db.Uuid
+  childId       String           @map("child_id") @db.Uuid
+  deviceId      String           @map("device_id") @db.Uuid
+  requestedBy   String           @map("requested_by") @db.Uuid
+  mode          LiveSessionMode
+  state         LiveSessionState @default(REQUESTED)
+  expiresAt     DateTime         @map("expires_at")
+  startedAt     DateTime?        @map("started_at")
+  stoppedAt     DateTime?        @map("stopped_at")
+  stopReason    String?          @map("stop_reason")
+  createdAt     DateTime         @default(now()) @map("created_at")
+  child         Child            @relation(fields: [childId], references: [id], onDelete: Cascade)
+
+  @@index([childId, state])
+  @@map("sessions")
+}
+
+model Subscription {
+  id                String           @id @default(uuid()) @db.Uuid
+  familyId          String           @map("family_id") @db.Uuid
+  productId         String           @map("product_id")
+  purchaseTokenHash String           @unique @map("purchase_token_hash")
+  entitlementState  EntitlementState @default(FREE) @map("entitlement_state")
+  expiresAt         DateTime?        @map("expires_at")
+  verifiedAt        DateTime         @default(now()) @map("verification_time")
+  family            Family           @relation(fields: [familyId], references: [id], onDelete: Cascade)
+
+  @@index([familyId])
+  @@map("subscriptions")
+}
+
+model AuditEvent {
+  id            String   @id @default(uuid()) @db.Uuid
+  familyId      String   @map("family_id") @db.Uuid
+  actorId       String   @map("actor_id") @db.Uuid
+  childId       String?  @map("child_id") @db.Uuid
+  action        String
+  result        String
+  correlationId String   @map("correlation_id") @db.Uuid
+  timestamp     DateTime @default(now())
+  family        Family   @relation(fields: [familyId], references: [id], onDelete: Cascade)
+
+  @@index([familyId, timestamp])
+  @@map("audit_events")
+}
+
+model DeletionRequest {
+  id          String    @id @default(uuid()) @db.Uuid
+  familyId    String    @map("family_id") @db.Uuid
+  requestedBy String    @map("requested_by") @db.Uuid
+  status      String    @default("QUEUED")
+  createdAt   DateTime  @default(now()) @map("created_at")
+  completedAt DateTime? @map("completed_at")
+
+  @@index([familyId])
+  @@map("deletion_requests")
+}

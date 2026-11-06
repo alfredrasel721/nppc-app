@@ -1,0 +1,492 @@
+{
+  "generated_utc": "2026-11-05T19:04:15.748312+00:00",
+  "status": "SPECIFICATION_AND_STARTER_SCAFFOLD_NOT_IMPLEMENTED",
+  "file_count_excluding_manifest": 119,
+  "feature_count": 111,
+  "premium_feature_families": [
+    "screen_mirroring",
+    "live_camera",
+    "live_audio",
+    "notification_filter",
+    "web_filter",
+    "social_media_filter"
+  ],
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "a319a1a293585c39d308115f0846b804c498a53c8657cd171c8330858c75d29e"
+    },
+    {
+      "path": ".github/workflows/validate-specs.yml",
+      "sha256": "2ca66d86523104a3b32577959cf1438201aefce3c0debeb4750e9c415bd88226"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "a96571784aeb352fffa4642e8f2dfc10d6d5808be5bf6c614abcdfaf26a11098"
+    },
+    {
+      "path": "00-agent-instructions/AGENT_WORKFLOW.md",
+      "sha256": "95eb503a84d8829b622da9bbb64833465cb97097de595c7e1d3bb7df14c3f59f"
+    },
+    {
+      "path": "00-agent-instructions/CODING_STANDARDS.md",
+      "sha256": "efbb38dd58cd3e4d75fc549728d20b82223470b48145f8e652a43cadf6fc05b9"
+    },
+    {
+      "path": "00-agent-instructions/DEFINITION_OF_DONE.md",
+      "sha256": "a27a01ab7d122bb21664c551f0725f736b24388588f7cb15f31f14638a474143"
+    },
+    {
+      "path": "00-agent-instructions/PROJECT_CONTEXT.md",
+      "sha256": "24de46c50bf42b522eb2ebde98dbc98e75dc5889f529321525a4e367095c46dd"
+    },
+    {
+      "path": "00-agent-instructions/SYSTEM_INSTRUCTIONS.md",
+      "sha256": "1822e9ba31f54d05e2805cdaec1c87011815ccb37696eccc83a1be2be754148e"
+    },
+    {
+      "path": "00-agent-instructions/TASK_BREAKDOWN.md",
+      "sha256": "02fc4aed0fe5fe529cb7b0a753883b92743f9f16bb23a61e72922d79ae96976a"
+    },
+    {
+      "path": "01-product-requirements/ACCEPTANCE_CRITERIA.md",
+      "sha256": "533956773a213438ed5161d454d9cd130fb2fd0572f6f8dfe342c14080721d7a"
+    },
+    {
+      "path": "01-product-requirements/FEATURE_CATALOG.md",
+      "sha256": "d8642c724350cdbdfd59a42cb6a0b6664029ed70c51f739f141f385cd03301fd"
+    },
+    {
+      "path": "01-product-requirements/FEATURE_TIER_RULES.txt",
+      "sha256": "1b4a148e79b35530c03c4c2891b9c98b45ed416166652958c7f6a73c8c559e08"
+    },
+    {
+      "path": "01-product-requirements/FUNCTIONAL_REQUIREMENTS.md",
+      "sha256": "14c7d7405e919cd0d6d62d8daef53a93570ac1def86585f49fa0f276335ad5b6"
+    },
+    {
+      "path": "01-product-requirements/MONETIZATION_MATRIX.md",
+      "sha256": "89c8f375e0c5897e92cf0b803754daf488ca2da5c22f45fdd26edf588468c4a9"
+    },
+    {
+      "path": "01-product-requirements/NON_FUNCTIONAL_REQUIREMENTS.md",
+      "sha256": "84e5a2667b879b26b337a33a70c2dffd34b19b6fad1cf8e10d37d25193ef2ac0"
+    },
+    {
+      "path": "01-product-requirements/OPEN_QUESTIONS.md",
+      "sha256": "2dfbf03225dde52f03e33448650591ca76bfc8c0f846d1e4fc2401e8f3829cf0"
+    },
+    {
+      "path": "01-product-requirements/PRD.md",
+      "sha256": "9701d1b9934284a2d294cf33fb6739ca3c7c8e6bff432c5b2d11c8b2b36c275b"
+    },
+    {
+      "path": "01-product-requirements/PRODUCT_BRIEF.md",
+      "sha256": "b4452736a89eb712f83af61d38668fe210ae073bc928ebc15882a708fad3d67f"
+    },
+    {
+      "path": "01-product-requirements/PROJECT_SCOPE.md",
+      "sha256": "d0f3f37cf7052100a34ebbfe950d50b77acd19df5b32805a2523ae447f73938f"
+    },
+    {
+      "path": "01-product-requirements/ROADMAP.md",
+      "sha256": "9a285efbb86f33d004d55ce82c53a26b51bf5c75df86c26db541abffcf236e95"
+    },
+    {
+      "path": "01-product-requirements/SRS.md",
+      "sha256": "271a1d25a06b15d8451144fef96ac772fb88c7b7346c25633d13be29ba15b877"
+    },
+    {
+      "path": "01-product-requirements/USER_ROLES_AND_PERMISSIONS.md",
+      "sha256": "fa28680f8a6aca826ed05682e959fee8cf99e0f9988fb81f515196353eb10fb9"
+    },
+    {
+      "path": "01-product-requirements/USER_STORIES.md",
+      "sha256": "b38a27b580f3dbfc482e4a8bf7da737524b3962b08cf062e8c597637e2b8a07b"
+    },
+    {
+      "path": "01-product-requirements/feature_catalog.csv",
+      "sha256": "4dd0f053181b9b2d482efe7ea4204738b12e803e6582478a6e8a43484f3c1a6f"
+    },
+    {
+      "path": "01-product-requirements/feature_catalog.json",
+      "sha256": "7197e110cf588ed2bb61784ad7ee51eb71ff97b5bd3b4eb285978995fbe2017c"
+    },
+    {
+      "path": "02-ui-ux-design/ACCESSIBILITY.md",
+      "sha256": "6be69c321b12d7f70cc19411c72cc285704a906c71b619cc5867d06df1fcd23a"
+    },
+    {
+      "path": "02-ui-ux-design/BRAND_GUIDELINES.md",
+      "sha256": "15375efd4148cfc648feecfabc6391a465436f5bff3b0a11321c7830b9e04388"
+    },
+    {
+      "path": "02-ui-ux-design/COMPONENT_SPECIFICATIONS.md",
+      "sha256": "45147f52932fe64bbcd39019d2d06e72369ef562674a5e470f6915c7f332b589"
+    },
+    {
+      "path": "02-ui-ux-design/DESIGN_SYSTEM.md",
+      "sha256": "b73f661c0d4bf5e82d437fae271045f1be95573f44f3e6a99978e0f3df6961ef"
+    },
+    {
+      "path": "02-ui-ux-design/NAVIGATION_STRUCTURE.md",
+      "sha256": "ad979bd3f63a1a89d9461667c55fb21b0277618a2925e8e154716b74822d81de"
+    },
+    {
+      "path": "02-ui-ux-design/RESPONSIVE_DESIGN.md",
+      "sha256": "636c0808b116a2f3e4b2472ca3ded4f1d9cc7a5acd36862d10f57d2839655438"
+    },
+    {
+      "path": "02-ui-ux-design/SCREEN_INVENTORY.md",
+      "sha256": "ff69016d8a183577542c6e0ae3418cd94e068a0805456e4e072a0e78a5ac4796"
+    },
+    {
+      "path": "02-ui-ux-design/UI_STATES.md",
+      "sha256": "4dc584e37800415307579a2baec5250ab681bb1c088fabda899d2bc4b368fec4"
+    },
+    {
+      "path": "02-ui-ux-design/USER_FLOWS.md",
+      "sha256": "f25049d4c1bd5d98c257ea2d3fd156152ccde92b979154dd75ca9116bdae84f3"
+    },
+    {
+      "path": "02-ui-ux-design/design-tokens.json",
+      "sha256": "5289f858c3849fab6fbfc41442f9049ef395e8d374db57c25f444b99b3f74589"
+    },
+    {
+      "path": "03-technical-architecture/API_SPECIFICATION.yaml",
+      "sha256": "5f13b46ce7e6e8a4f51cdef563672ccef88a0f0467f4bd84f216292cf787ef04"
+    },
+    {
+      "path": "03-technical-architecture/ARCHITECTURE_DECISIONS.md",
+      "sha256": "100f7236511d177c5da8d7d9d40ed3cb9a0eacfeebe312e150f2121d3559b954"
+    },
+    {
+      "path": "03-technical-architecture/ARCHITECTURE_DIAGRAM.md",
+      "sha256": "35fdf62039b6ae9b13bf207be8e45829c9e8d0fba0c38d27066168e7954db1c0"
+    },
+    {
+      "path": "03-technical-architecture/AUTHENTICATION_DESIGN.md",
+      "sha256": "cb6960c72e78c70a3e02666b36c46badad08c8f66e8cc99aa5fbb8ff4a4d6a6b"
+    },
+    {
+      "path": "03-technical-architecture/BILLING_STATE_MACHINE.md",
+      "sha256": "3b139ea152f2f59e557a76f2e38664c6747e029fecb47bf2f5c2810425f27754"
+    },
+    {
+      "path": "03-technical-architecture/DATABASE_DESIGN.md",
+      "sha256": "073eca68440a3e39276fb8a6d2b55806366670ad90a529f74e98ac2818e5828c"
+    },
+    {
+      "path": "03-technical-architecture/DATA_DICTIONARY.md",
+      "sha256": "4998a5b989c0f397e374a3375300c8501acf922384bb94c0c80cfc8b3879fa70"
+    },
+    {
+      "path": "03-technical-architecture/EVENT_SCHEMA.yaml",
+      "sha256": "67f420e8d99ab92671024cc80ee8bc9f985b20d8e7302f6a129cf0287347b475"
+    },
+    {
+      "path": "03-technical-architecture/FILTERING_LIMITATIONS.md",
+      "sha256": "0d9c84ae90943bc4255cbdfdafb6d85abb55de24360bb57d60347edd174708a6"
+    },
+    {
+      "path": "03-technical-architecture/INTEGRATION_SPECIFICATIONS.md",
+      "sha256": "136285c32692ae12319aebc3d0ca73e1d17a0dee5457ac7acae281b8509722cc"
+    },
+    {
+      "path": "03-technical-architecture/LIVE_SESSION_PROTOCOL.md",
+      "sha256": "a6b89584ffa5526a671046a2d6dc72cd9a34d3adf62752dd2b53ba6af429bd01"
+    },
+    {
+      "path": "03-technical-architecture/RULE_ENGINE_SPEC.md",
+      "sha256": "dc58f58b54b34a9b446f90125133da4f45a7396930e4f0261232f6bf3eb4fa0c"
+    },
+    {
+      "path": "03-technical-architecture/SYSTEM_ARCHITECTURE.md",
+      "sha256": "09bc2825257a9c68dad00cd4e5061d1234ca7a81d3f99a2ec2245f9e80357083"
+    },
+    {
+      "path": "03-technical-architecture/TECH_STACK.md",
+      "sha256": "a346f53c3e9f15adc9d36a8e8867487b51374b212e22f14f145b734259c61889"
+    },
+    {
+      "path": "04-platform-specifications/ADMIN_PANEL_SPECIFICATION.md",
+      "sha256": "87a3ae9d1ddd0c949e0babc59389bf2c62b8d42b8becdae000a84f76519b17a1"
+    },
+    {
+      "path": "04-platform-specifications/ANDROID_MODULE_BOUNDARIES.md",
+      "sha256": "90cb8aa970163a8ca028bcca137f8f33ab6c1863dcf1f8fd2f9f7c3744d44d36"
+    },
+    {
+      "path": "04-platform-specifications/ANDROID_REQUIREMENTS.md",
+      "sha256": "6d24f3923580d83beded3fdcc8f65dece4918b3c83dadeb946b2f64e292ee25b"
+    },
+    {
+      "path": "04-platform-specifications/CHILD_APP_SPECIFICATION.md",
+      "sha256": "a14986b5140fb4be3f55503e1f736f6f11ce217b0754a806948138b0d65f8f60"
+    },
+    {
+      "path": "04-platform-specifications/DEVICE_PERMISSION_MATRIX.md",
+      "sha256": "1d85a5cd10bb0afa7da037e53f53a0f939e314a02d8d30d5482d69aa571b915e"
+    },
+    {
+      "path": "04-platform-specifications/IOS_REQUIREMENTS.md",
+      "sha256": "8e1c5c5b6c7c3d869b9b225cf884b2a9563f8a4b6fd87d53bd9862950e9e6e72"
+    },
+    {
+      "path": "04-platform-specifications/PARENT_APP_SPECIFICATION.md",
+      "sha256": "b0f6d948138e8125fd6e49b1fa5d19a7666bce70da1a61571a0e4c2bb045b74d"
+    },
+    {
+      "path": "04-platform-specifications/PLATFORM_CAPABILITY_MATRIX.md",
+      "sha256": "76870993aa3924aa12a8e6a431f684e2ebc4121bdd74b60028e2265ff5a4c1c3"
+    },
+    {
+      "path": "04-platform-specifications/WEB_DASHBOARD_REQUIREMENTS.md",
+      "sha256": "ca0cf1b355fac5492a08c9f3d17c11a338100bb64e7fddb31767f138adce3650"
+    },
+    {
+      "path": "05-security-and-privacy/ABUSE_PREVENTION.md",
+      "sha256": "d9decc8394538a15bf2a9e79e4e6a13eb4f66dba5b45a4788fe6a5ae0af2e2e1"
+    },
+    {
+      "path": "05-security-and-privacy/CHILD_SAFETY_POLICY.md",
+      "sha256": "d23069335265604743f0c99484cee741f5bd413ebfa75b894c11f213f6c98f21"
+    },
+    {
+      "path": "05-security-and-privacy/CONSENT_MANAGEMENT.md",
+      "sha256": "a79b8b3a3222763707636edd946052a22dc7a56965449833464f7e104b124de6"
+    },
+    {
+      "path": "05-security-and-privacy/DATA_PROTECTION.md",
+      "sha256": "843dca93d2ec338ecf9e9e3acc05b4d8f32d4bcec9a9982b64ce2e29ba3835e7"
+    },
+    {
+      "path": "05-security-and-privacy/DATA_RETENTION_POLICY.md",
+      "sha256": "03dc75fe1ab86f93090bf7bd13322c1879bf1bde15cdad6812573271edc1e224"
+    },
+    {
+      "path": "05-security-and-privacy/INCIDENT_RESPONSE.md",
+      "sha256": "9a9a466bc3ed1896da31077d7a0ac7e0f30a175d14424c78cfea07e3517c0e2c"
+    },
+    {
+      "path": "05-security-and-privacy/PRIVACY_POLICY.md",
+      "sha256": "1f81104aa4645e512288b6a26448dbbe5b1ad50042aeac9d42d1505517df7c15"
+    },
+    {
+      "path": "05-security-and-privacy/SECURITY_REQUIREMENTS.md",
+      "sha256": "bfcec1d145158694d68f71002d2d38606827751179423eb8c0155518f01ca6e1"
+    },
+    {
+      "path": "05-security-and-privacy/THREAT_MODEL.md",
+      "sha256": "164b52233a0e7cea455df3f6b6df5579c03a35c1709f714f29d10b30ef8b73f1"
+    },
+    {
+      "path": "06-testing-and-quality/BUG_TRACKING.md",
+      "sha256": "5125804b0f64c2d35db22cf1a40c4d0b23301794bdb920c73619ba500fcf959b"
+    },
+    {
+      "path": "06-testing-and-quality/DEVICE_COMPATIBILITY.md",
+      "sha256": "f1a30c2a752c8623cadd1807916a965134dd9a9542ed0144595e917c78881716"
+    },
+    {
+      "path": "06-testing-and-quality/E2E_TEST_SCENARIOS.md",
+      "sha256": "e166b92b0388c3d87fc66d6f24d69e2d73b039c745dc6e3aeff2a927d4bbeb9d"
+    },
+    {
+      "path": "06-testing-and-quality/FEATURE_TEST_MATRIX.csv",
+      "sha256": "4cb2cad326965bb313a9a9f88d2ab35d4cf19748935d45d0b30a81af51935cec"
+    },
+    {
+      "path": "06-testing-and-quality/INTEGRATION_TEST_REQUIREMENTS.md",
+      "sha256": "29cb8143ac6d011e2e6d40af30c2ca95fbdb02f202c3a87a4dc7b7bf53559410"
+    },
+    {
+      "path": "06-testing-and-quality/PERFORMANCE_REQUIREMENTS.md",
+      "sha256": "144be33c05d3cf87f2fc32b19f7921a87410462bed71c8a067a691acdf257b2c"
+    },
+    {
+      "path": "06-testing-and-quality/RELEASE_CHECKLIST.md",
+      "sha256": "6753bd4b492eb396edc690245e398040808dbb4ff6dcd8aaed13a7769b2a0324"
+    },
+    {
+      "path": "06-testing-and-quality/SECURITY_TEST_MATRIX.md",
+      "sha256": "6e8799a8f778a8575e92a4d8802bcec4ad6c7d218c9634324a7a1c247e83d23c"
+    },
+    {
+      "path": "06-testing-and-quality/TESTING_STRATEGY.md",
+      "sha256": "5183bef1d64f90ffcae0cb286322a43e6de53a34241c4b6eeedc2bfa20c47e45"
+    },
+    {
+      "path": "06-testing-and-quality/TEST_CASES.md",
+      "sha256": "8f31f71fe998abfc46ae5d4d0ca0a81d7cec9810757df31b1a39fd63472856e5"
+    },
+    {
+      "path": "06-testing-and-quality/UNIT_TEST_REQUIREMENTS.md",
+      "sha256": "b7720be8cc298519108d77a66be9c461d61e4d9f60c9139c13f5cadd190991b0"
+    },
+    {
+      "path": "07-devops-and-deployment/BACKUP_AND_RECOVERY.md",
+      "sha256": "38de55bd46be1b4e5ff7227ed22c0b004c20e231809e3b819189a6fb73cceab8"
+    },
+    {
+      "path": "07-devops-and-deployment/CI_CD_PIPELINE.md",
+      "sha256": "d1d32bfabe7d1f4325a054a38d8287303032503cc1b750d66cc5b1a8435a9a06"
+    },
+    {
+      "path": "07-devops-and-deployment/DEPLOYMENT_GUIDE.md",
+      "sha256": "3da18ef5d99b1d152907adf9e270a82ce7dbdb2a570f2b8f949d7cb66d3891da"
+    },
+    {
+      "path": "07-devops-and-deployment/DEVELOPMENT_SETUP.md",
+      "sha256": "0b9dfbb9fab1f71a5dd4de5924f942851594fac434df7b10ba126bb376952f63"
+    },
+    {
+      "path": "07-devops-and-deployment/ENVIRONMENT_CONFIGURATION.md",
+      "sha256": "5abfd17e5c399abfc1f3dc8dc16dff5c6f349b92947c9868f4c640ae79b78192"
+    },
+    {
+      "path": "07-devops-and-deployment/MONITORING_AND_LOGGING.md",
+      "sha256": "1081c364ec7fb6961a0bc73e6c2bbac1c2f60ce29e2601b9b12a9271b642c9f3"
+    },
+    {
+      "path": "07-devops-and-deployment/PRODUCTION_RUNBOOK.md",
+      "sha256": "6b06e947796eef0b84cca05b30536c9ed4bc2c072e98971f8e57361837f83e3a"
+    },
+    {
+      "path": "07-devops-and-deployment/SCALABILITY_PLAN.md",
+      "sha256": "2bfc2499748ce50fe81daa0141c2e47d40d98c16a00411ccf8c6faaf511a15ce"
+    },
+    {
+      "path": "08-project-management/CHANGELOG.md",
+      "sha256": "612b3b80ea0e1ba89da366c110a88285ad7a8aed567822968cd9d7b0db3e54b1"
+    },
+    {
+      "path": "08-project-management/DECISION_LOG.md",
+      "sha256": "6df3d0fa2367cee8258abf15933d8cd64ae24938c0e7c215fbc187f68bc68983"
+    },
+    {
+      "path": "08-project-management/DEPENDENCY_MAP.md",
+      "sha256": "f6c658182e14e5ff8ef88e05a1bc6fc7b5ddc1b3c68a20e20225604dba0072cf"
+    },
+    {
+      "path": "08-project-management/IMPLEMENTATION_PLAN.md",
+      "sha256": "09b4a220a2db81cfd535743e5b7afe668609e4f2f53942117e65340313cbac77"
+    },
+    {
+      "path": "08-project-management/KNOWN_LIMITATIONS.md",
+      "sha256": "33fba339f206ffb94ef88cc937cffff25baf7009216ba96d1fa772966a1342b5"
+    },
+    {
+      "path": "08-project-management/MILESTONES.md",
+      "sha256": "919acded453ceca8b073e1e6a88d830f7eab6ad29e1ff4ff988da2e2fea86ef4"
+    },
+    {
+      "path": "08-project-management/PROGRESS_TRACKER.md",
+      "sha256": "0cf50cb036cb7760d5ed6021556c182f594ccb9278c155affef927d4295c96ed"
+    },
+    {
+      "path": "08-project-management/REQUIREMENT_TRACEABILITY.csv",
+      "sha256": "8464b19fe07648870c862ee85c23835c5e2ef0688b75547c3a8c10841da32807"
+    },
+    {
+      "path": "08-project-management/TASKS.md",
+      "sha256": "459981442259d3dc2dff86b2ff5a7404f29696a9f8db7093a9d33f74b78c7f98"
+    },
+    {
+      "path": "09-source-code/admin-dashboard/README.md",
+      "sha256": "d179ea76b7dd7d0560dc7b3d2e08743f9cb8a30fc5e7ca66c5baf63762c0c2e0"
+    },
+    {
+      "path": "09-source-code/backend-api/README.md",
+      "sha256": "aad79980b8d52ac006047e9123d4083239776ebe1dfba2dbbbc1ad869073614b"
+    },
+    {
+      "path": "09-source-code/backend-api/package.json",
+      "sha256": "133d327e6b63ebe9fcd33f8d79087dcba2747e82bd9e1506305f1fb2d0dcb36a"
+    },
+    {
+      "path": "09-source-code/background-workers/README.md",
+      "sha256": "742f1081433399c7c9f32e98e5812c9ea166c684aa0aeee4c26fa0fbdb71d5ac"
+    },
+    {
+      "path": "09-source-code/child-app/README.md",
+      "sha256": "7b5755a351e54fb044b3beab09596159948f6cfef701d53f861ab58f04f7f4b8"
+    },
+    {
+      "path": "09-source-code/database/README.md",
+      "sha256": "8405e2cfa5e67f2f653d63ff8f18644f8422fecbea465295533147ace440a39a"
+    },
+    {
+      "path": "09-source-code/database/schema.prisma",
+      "sha256": "63b75358ba00cddbe42a8c20f0c197e8b42ed0b15372f76b9448e28573d21cd3"
+    },
+    {
+      "path": "09-source-code/infrastructure/README.md",
+      "sha256": "17be5f7a781f3ff309a5770a941a79f977cf0375206cf15abacd681765175749"
+    },
+    {
+      "path": "09-source-code/parent-app/README.md",
+      "sha256": "0cb976834e00f2795407e6c258e80774629f2b159d4e2896c5d45755480503d7"
+    },
+    {
+      "path": "09-source-code/shared-packages/README.md",
+      "sha256": "f7beb83cdaf0682288db543c111c3f830f27533fe20f2f815dc153eb7f5c8862"
+    },
+    {
+      "path": "10-resources/README.md",
+      "sha256": "f3a16af6199bf3f8e5818e520ef38d9a1f9a00fdcab8bbad566e9a0e2123ca31"
+    },
+    {
+      "path": "10-resources/api-documentation/README.md",
+      "sha256": "8ac8fc0d449be64546ebc1b24260d0969e4081daa16de3a40bd53cd8a4642adf"
+    },
+    {
+      "path": "10-resources/assets/README.md",
+      "sha256": "8ac8fc0d449be64546ebc1b24260d0969e4081daa16de3a40bd53cd8a4642adf"
+    },
+    {
+      "path": "10-resources/fonts/README.md",
+      "sha256": "8ac8fc0d449be64546ebc1b24260d0969e4081daa16de3a40bd53cd8a4642adf"
+    },
+    {
+      "path": "10-resources/icons/README.md",
+      "sha256": "8ac8fc0d449be64546ebc1b24260d0969e4081daa16de3a40bd53cd8a4642adf"
+    },
+    {
+      "path": "10-resources/illustrations/README.md",
+      "sha256": "8ac8fc0d449be64546ebc1b24260d0969e4081daa16de3a40bd53cd8a4642adf"
+    },
+    {
+      "path": "10-resources/original-inputs/ai_agent_development_package_parental_control.md",
+      "sha256": "b52a44c060372fa2ba57925e44041c25c87ed9dc379a4d27415943c2b380e089"
+    },
+    {
+      "path": "10-resources/original-inputs/parental_control_features_checklist.txt",
+      "sha256": "10fb96953ba4251490f5d9c62e5e8203f6be137c27832fef0f3a1f11c11751c5"
+    },
+    {
+      "path": "10-resources/reference-apps/README.md",
+      "sha256": "460581a905bc5627c0dc9880b79e5a137f00bfd5b580b42ccead49e7e37ada5f"
+    },
+    {
+      "path": "10-resources/reference-screenshots/README.md",
+      "sha256": "8ac8fc0d449be64546ebc1b24260d0969e4081daa16de3a40bd53cd8a4642adf"
+    },
+    {
+      "path": "10-resources/sample-data/README.md",
+      "sha256": "8ac8fc0d449be64546ebc1b24260d0969e4081daa16de3a40bd53cd8a4642adf"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "d1ead1acec4c9469284fb7bb972cf0cc8ef38f9b216d7d55b4b0464ea2993a83"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f94e971df235efae718ab6b839570eddcb81b8873109a8702690d7d19a2250c3"
+    },
+    {
+      "path": "docker-compose.yml",
+      "sha256": "8f577af809256b4db38b21e60f76c382c154948b0de7c268b6ddb4bdf8cc2ecd"
+    }
+  ]
+}

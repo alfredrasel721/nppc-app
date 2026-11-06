@@ -1,0 +1,115 @@
+openapi: 3.1.0
+info:
+  title: Android Parental Control API
+  version: 0.1.0
+  description: Draft contract. Auth, entitlements, consent and role checks are mandatory; not production complete.
+servers:
+  - url: https://api.example.invalid/v1
+security:
+  - bearerAuth: []
+paths:
+  /families:
+    post:
+      operationId: createFamily
+      summary: Create family (parent only)
+      responses: {'201': {description: Created}, '403': {description: Forbidden}}
+    get:
+      operationId: listFamilies
+      summary: List families visible to caller
+      responses: {'200': {description: OK}}
+  /families/{familyId}/children:
+    parameters: [{name: familyId, in: path, required: true, schema: {type: string, format: uuid}}]
+    post:
+      operationId: createChild
+      summary: Create child profile
+      responses: {'201': {description: Created}, '403': {description: Forbidden}}
+    get:
+      operationId: listChildren
+      summary: List authorized children
+      responses: {'200': {description: OK}}
+  /pairings:
+    post:
+      operationId: createPairing
+      summary: Generate expiring one-time pairing token
+      responses: {'201': {description: Pairing created}}
+  /pairings/confirm:
+    post:
+      operationId: confirmPairing
+      summary: Child device confirms pairing
+      responses: {'200': {description: Paired}, '410': {description: Expired or consumed}}
+  /children/{childId}/rules:
+    parameters: [{name: childId, in: path, required: true, schema: {type: string, format: uuid}}]
+    get:
+      operationId: getRules
+      responses: {'200': {description: Rules}}
+    put:
+      operationId: upsertRules
+      summary: Validate family scope, device capability, premium rule entitlement
+      responses: {'202': {description: Sync pending}, '402': {description: Premium required}, '403': {description: Forbidden}}
+  /devices/{deviceId}/rules/ack:
+    parameters: [{name: deviceId, in: path, required: true, schema: {type: string, format: uuid}}]
+    post:
+      operationId: acknowledgeRules
+      summary: Device reports applied version and capability result
+      responses: {'200': {description: Recorded}}
+  /children/{childId}/requests:
+    parameters: [{name: childId, in: path, required: true, schema: {type: string, format: uuid}}]
+    post:
+      operationId: createExceptionRequest
+      responses: {'201': {description: Requested}}
+    get:
+      operationId: listExceptionRequests
+      responses: {'200': {description: OK}}
+  /requests/{requestId}/decision:
+    parameters: [{name: requestId, in: path, required: true, schema: {type: string, format: uuid}}]
+    post:
+      operationId: decideRequest
+      responses: {'200': {description: Decided}, '403': {description: Forbidden}}
+  /children/{childId}/sos:
+    parameters: [{name: childId, in: path, required: true, schema: {type: string, format: uuid}}]
+    post:
+      operationId: triggerSos
+      summary: Emergency endpoint; no Premium check
+      responses: {'202': {description: Dispatching}}
+  /children/{childId}/locations:
+    parameters: [{name: childId, in: path, required: true, schema: {type: string, format: uuid}}]
+    get:
+      operationId: listLocations
+      responses: {'200': {description: Authorized locations}, '403': {description: Forbidden}}
+  /subscriptions/verify:
+    post:
+      operationId: verifyPurchase
+      summary: Server verifies Google Play purchase token
+      responses: {'200': {description: Verified}, '400': {description: Invalid purchase}}
+  /entitlements:
+    get:
+      operationId: getEntitlements
+      responses: {'200': {description: Verified entitlements}}
+  /live-sessions:
+    post:
+      operationId: requestLiveSession
+      summary: Premium only; creates child-approval request, never starts capture
+      responses: {'202': {description: Child approval pending}, '402': {description: Premium required}}
+  /live-sessions/{sessionId}/child-decision:
+    parameters: [{name: sessionId, in: path, required: true, schema: {type: string, format: uuid}}]
+    post:
+      operationId: childLiveDecision
+      summary: Explicit child accept or decline; OS prompt still mandatory
+      responses: {'200': {description: Recorded}, '403': {description: Wrong device}}
+  /live-sessions/{sessionId}/stop:
+    parameters: [{name: sessionId, in: path, required: true, schema: {type: string, format: uuid}}]
+    post:
+      operationId: stopLiveSession
+      summary: Child or authorized session participant can end session
+      responses: {'200': {description: Stopped}}
+  /privacy/export:
+    post:
+      operationId: requestExport
+      responses: {'202': {description: Export queued}}
+  /privacy/delete:
+    post:
+      operationId: requestDeletion
+      responses: {'202': {description: Deletion queued}}
+components:
+  securitySchemes:
+    bearerAuth: {type: http, scheme: bearer, bearerFormat: JWT}
